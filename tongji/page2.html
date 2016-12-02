@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page2</title>
+    <script src="jquery.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="tongji.js"></script>
+</head>
+<body>
+
+<p style="font-size: 20px;">
+    <a style="color:red;" href="http://weber.pub/js记录用户行为浏览记录和停留时间/163.html" target="_blank">返回文章</a>
+    <a style="color:red;" href="http://weber.pub" target="_blank">返回网站首页</a>
+</p>
+
+<a href="page1.html">page1</a>
+<a href="page2.html">page2</a>
+<a href="page3.html">page3</a>
+<a href="page4.html">page4</a>
+<a href="page5.html">page5</a>
+<a href="page6.html">page6</a>
+<p id="tj" style="border: 2px solid fuchsia;">
+
+</p>
+
+<script>
+    $('#tj').html(localStorage.getItem('jsArr'));
+</script>
+</body>
+</html>

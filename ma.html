@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>埋码--JS</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+    var _maq = _maq || [];
+    _maq.push(['_setAccount', '网站标识']);
+
+    (function() {
+        var ma = document.createElement('script');
+        ma.type = 'text/javascript';
+        ma.async = true;
+        // ma.src = ('https:' == document.location.protocol ? 'https://analytics' : 'http://analytics') + '.codinglabs.org/ma.js';
+        ma.src = ('https:' == document.location.protocol ? 'http://192.168.253.1:8006/' : 'http://192.168.253.1:8006/') + 'js/ma.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ma, s);
+    })();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

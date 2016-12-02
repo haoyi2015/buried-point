@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- <script type="text/javascript" src="app.js"></script> -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	
+   <!-- 获取用户行为数据（js文件外部引用） 五味子-->
+   <script type="text/javascript">
+	  var _uid = "${sessionScope.memberId}";//获取用户会员ID
+	  var _oid = "${orderId}";//获取用户订单ID
+      (function() {          //(function(){})是一个闭包的用法，闭包必定会被调用。
+	
+	  var ga = document.createElement('script'); 
+	  ga.type = 'text/javascript'; 
+	  ga.charset='gbk';
+	  ga.async = true;//ga.async = true 异步调用外部js文件，即不阻塞浏览器的解析
+	  ga.src = 'js/ana.js';  
+	  var s = document.getElementsByTagName('script')[0];    //取得第一个tag名为script的元素
+	  s.parentNode.insertBefore(ga, s);             //在s前添加元素ga
+    })();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
